@@ -1,6 +1,7 @@
 # code here!
 class School
 
+
   @roster = {}
 
   def initialize(name)
@@ -11,7 +12,7 @@ class School
     if @roster[grade] == nil
       @roster[grade] = []
     end
-    @roster[grade] = name
+    @roster[grade] << name
   end
 
   def grade(grade)
