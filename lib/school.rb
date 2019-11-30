@@ -22,6 +22,6 @@ class School
   end
 
   def sort
-    @roster = @roster.each{|grade, names| names.sort}
+    @roster = @roster.each{|grade, names| grade.sort}
   end
 end
